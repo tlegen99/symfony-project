@@ -103,3 +103,9 @@ Temporary Items
 ### Symfony Patch ###
 /web/css/
 /web/js/
+
+/node_modules/
+
+/public/build/
+
+/package-lock.json
