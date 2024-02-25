@@ -22,7 +22,7 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    .addEntry('app', './assets/app.js')
+    .addEntry('app', './assets/site/app.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
@@ -62,7 +62,7 @@ Encore
         {
             host: "localhost",
             port: 3000,
-            proxy: process.env.PROXY,
+            proxy: "http://127.0.0.1:1010/",
             files: [
                 {
                     match: ["src/*.php"],
